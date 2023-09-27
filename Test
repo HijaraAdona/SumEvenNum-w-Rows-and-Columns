@@ -1,0 +1,17 @@
+import java.util.*;
+public class HijaraAdonEve_Pact2Test {
+         
+      public static void main(String[] args){
+     int[] data = {};
+      
+      Scanner scan = new Scanner(System.in);
+      int rows, cols;
+      int numArr[][] = new int[10][10];
+      System.out.println("Please enter the size of the 2D array-- ");
+      rows = scan.nextInt();
+      cols = scan.nextInt();
+      HijaraAdonaEve_PAct2Operations arr2D = new HijaraAdonaEve_PAct2Operations(rows, cols);
+      arr2D.populate(numArr);
+      arr2D.print(numArr);
+   }
+} 
