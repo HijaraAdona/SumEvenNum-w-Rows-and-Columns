@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class HijaraAdonEve_Pact2Test {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int rows, cols;
+        int numArr[][];
+
+        System.out.println("Please enter the size of the 2D array-- ");
+        rows = scan.nextInt();
+        cols = scan.nextInt();
+        numArr = new int[rows][cols];
+
+        HijaraAdonaEve_PAct2Operations arr2D = new HijaraAdonaEve_PAct2Operations(rows, cols);
+        arr2D.populate(numArr);
+        arr2D.print(numArr);
+
+        arr2D.displayEvenNumbers(numArr);
+        arr2D.insertionSort(numArr[0]); // Sorting the first row for example
+        arr2D.displayEvenNumbers(numArr);
+        
+        int sumEven = arr2D.sumEvenNumbers(numArr);
+        System.out.println("Sum of Even Numbers: " + sumEven);
+    }
+}
